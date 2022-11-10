@@ -1,0 +1,57 @@
+[{
+        "id": 101,
+        "categoria": "cafe",
+        "name": "Café Brasil Catuai",
+        "resumen": " Notas de cata: Chocolate con leche, caramelo, naranja",
+        "description": "Brasil Minas Gerais",
+        "stock": 45,
+        "img": "../assets/img/101.jpg"
+    },
+    {
+        "id": 102,
+        "categoria": "cafe",
+        "name": "Café Guatemala",
+        "resumen": "Notas de cata: Chocolate, avellana, manzana roja, uva verde.",
+        "description": "descripción cosa4",
+        "stock": 56,
+        "img": "../assets/img/102.jpg"
+
+    },
+    {
+        "id": 201,
+        "categoria": "accesorios",
+        "name": "Tamper regulable",
+        "resumen": "Acero, regulable, ejemplo",
+        "description": "descripción cosa3",
+        "stock": 12,
+        "img": "../assets/img/201.jpg"
+    },
+    {
+        "id": 202,
+        "categoria": "accesorios",
+        "name": "distribuidor OCD",
+        "resumen": "Distribuidor ejemplo",
+        "description": "descripción cosa2",
+        "stock": 9,
+        "img": "../assets/img/202.jpg"
+    },
+    {
+        "id": 301,
+        "categoria": "vajilla",
+        "name": "Set taza",
+        "resumen": "Cerámica ejemplo",
+        "description": "descripción cosa2",
+        "stock": 43,
+        "img": "../assets/img/301.jpg"
+
+    },
+    {
+        "id": 302,
+        "categoria": "vajilla",
+        "name": "Set platos",
+        "resumen": "platitos",
+        "description": "descripción cosa2",
+        "stock": 55,
+        "img": "../assets/img/302.jpg"
+    }
+]

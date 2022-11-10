@@ -1,31 +1,62 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from './CartWidget'
-function NavBarBS() {
+import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import {
+    MDBContainer,
+    MDBNavbar,
+    MDBNavbarBrand,
+    MDBNavbarToggler,
+    MDBIcon,
+    MDBNavbarNav,
+    MDBNavbarItem,
+    MDBNavbarLink,
+    MDBBtn,
+    MDBDropdown,
+    MDBDropdownToggle,
+    MDBDropdownMenu,
+    MDBDropdownItem,
+    MDBCollapse,
+} from 'mdb-react-ui-kit';
+
+export default function App() {
+    const [showBasic, setShowBasic] = useState(false);
+
     return (
-        <Navbar bg="light" expand="lg">
-            <Container>
-                <Navbar.Brand href="#home"><img alt='logotipo' src={require('../assets/img/logotipo-s.png')} /><img alt='isotipo' src={require('../assets/img/isotipo-s.png')} /></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav ">
-                    <Nav className="align-items-center px-5">
-                        <Nav.Link href="#home">Inicio</Nav.Link>
-                        <NavDropdown title="Categorías" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Café en granos</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Accesorios
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Vajilla</NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link href="#Cart"><CartWidget></CartWidget>
-                        </Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <MDBNavbar expand='lg' light bgColor='light'>
+            <MDBContainer fluid>
+                <MDBNavbarBrand ><Link to={process.env.PUBLIC_URL + "/"}><img alt='logotipo' src={require('../assets/img/logotipo-s.png')} /><img alt='isotipo' src={require('../assets/img/isotipo-s.png')} /></Link></MDBNavbarBrand>
+
+                <MDBNavbarToggler
+                    aria-controls='navbarSupportedContent'
+                    aria-expanded='false'
+                    aria-label='Toggle navigation'
+                    onClick={() => setShowBasic(!showBasic)}
+                >
+                    <MDBIcon icon='bars' fas />
+                </MDBNavbarToggler>
+
+                <MDBCollapse navbar show={showBasic}>
+                    <MDBNavbarNav className='mr-auto mb-2 mb-lg-0 justify-content-end'>
+                        <MDBNavbarItem>
+                            <MDBNavbarLink><Link to={process.env.PUBLIC_URL + "/"}> Inicio </Link></MDBNavbarLink>
+                        </MDBNavbarItem>
+
+                        <MDBNavbarItem>
+                            <MDBDropdown>
+                                <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                                    Categorías
+                                </MDBDropdownToggle>
+                                <MDBDropdownMenu>
+                                    <MDBDropdownItem link><Link to={"category/cafe"}>Café en granos </Link> </MDBDropdownItem>
+                                    <MDBDropdownItem link><Link to={"category/accesorios"}>Barista Tools </Link> </MDBDropdownItem>
+                                    <MDBDropdownItem link><Link to={"category/vajilla"}>Vajilla </Link> </MDBDropdownItem>
+                                </MDBDropdownMenu>
+                            </MDBDropdown>
+                        </MDBNavbarItem>
+                    </MDBNavbarNav>
+                    <CartWidget />
+                </MDBCollapse>
+            </MDBContainer>
+        </MDBNavbar>
     );
 }
-
-export default NavBarBS;
