@@ -1,0 +1,48 @@
+.t-compra{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #757575 !important;
+
+}
+
+.contador {
+    font-size: 1.5rem;
+    background-color: #21757c;
+    border-radius: 100rem 100rem 100rem 100rem;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tarjetas{
+
+    max-height: 40vh;
+}
+
+.formulario{
+    width: 100vw;
+    max-width: 600px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 10vh;
+
+}   
+
+.vhcards{
+    height: 80vh;
+}
+
+.botonCompra{
+    background-color: #21757c;
+    border-color: #0c5057;
+}
+
+.botonCompra:hover{
+    background-color: #28595e;
+        border-color: #0c5057;
+        
+
+}

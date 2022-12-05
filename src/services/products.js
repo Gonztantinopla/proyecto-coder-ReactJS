@@ -1,4 +1,7 @@
 import products from '..//assets/data/products.json'
+// import { useContext } from 'react';
+// import { CartContext } from '../context/CartContext';
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 
 export const getProducts = (id) => {
@@ -22,3 +25,5 @@ export const getProduct = (id) => {
     })
     return task
 }
+
+

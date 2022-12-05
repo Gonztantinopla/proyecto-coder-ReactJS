@@ -8,7 +8,7 @@ function ItemList({ products }) {
         <div>
             <MDBContainer >
                 <MDBRow >
-                    {products.map((producto,) => <Item productoItem={producto} />)}
+                    {products.map((producto,) => <Item key={producto.id} productoItem={producto} />)}
                 </MDBRow>
             </MDBContainer>
         </div>

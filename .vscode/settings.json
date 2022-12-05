@@ -3,6 +3,12 @@
     "cSpell.ignoreWords": [
         "Categoria",
         "Catuai",
-        "categoria"
+        "Contxt",
+        "Firestore",
+        "categoria",
+        "catuai",
+        "firestore",
+        "isotipo",
+        "querydb"
     ]
 }

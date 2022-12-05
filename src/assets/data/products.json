@@ -5,16 +5,18 @@
         "resumen": " Notas de cata: Chocolate con leche, caramelo, naranja",
         "description": "Brasil Minas Gerais",
         "stock": 45,
-        "img": "../assets/img/101.jpg"
+        "img": "../assets/img/101.jpg",
+        "precio": 1960
     },
     {
         "id": 102,
         "categoria": "cafe",
         "name": "Café Guatemala",
         "resumen": "Notas de cata: Chocolate, avellana, manzana roja, uva verde.",
-        "description": "descripción cosa4",
+        "description": "Café de altura",
         "stock": 56,
-        "img": "../assets/img/102.jpg"
+        "img": "../assets/img/102.jpg",
+        "precio": 2530
 
     },
     {
@@ -24,7 +26,8 @@
         "resumen": "Acero, regulable, ejemplo",
         "description": "descripción cosa3",
         "stock": 12,
-        "img": "../assets/img/201.jpg"
+        "img": "../assets/img/201.jpg",
+        "precio": 16700
     },
     {
         "id": 202,
@@ -33,7 +36,8 @@
         "resumen": "Distribuidor ejemplo",
         "description": "descripción cosa2",
         "stock": 9,
-        "img": "../assets/img/202.jpg"
+        "img": "../assets/img/202.jpg",
+        "precio": 15300
     },
     {
         "id": 301,
@@ -42,7 +46,8 @@
         "resumen": "Cerámica ejemplo",
         "description": "descripción cosa2",
         "stock": 43,
-        "img": "../assets/img/301.jpg"
+        "img": "../assets/img/301.jpg",
+        "precio": 8500
 
     },
     {
@@ -52,6 +57,7 @@
         "resumen": "platitos",
         "description": "descripción cosa2",
         "stock": 55,
-        "img": "../assets/img/302.jpg"
+        "img": "../assets/img/302.jpg",
+        "precio": 9250
     }
 ]

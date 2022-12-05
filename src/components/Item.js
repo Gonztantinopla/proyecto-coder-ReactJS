@@ -13,16 +13,19 @@ import {
 function Item({ productoItem }) {
 
     return (
-        <MDBCol className="pt-5 " size='md-6'>
+        <MDBCol className="pt-5" size='md-6'>
             <MDBCard alignment='center' className='hover-shadow ' >
-                <MDBCardImage src={require('../assets/img/202.jpg')} position='top' alt='...' />
+                <MDBCardImage className='img-fluid' src={productoItem.img} position='top' alt='...' />
                 <MDBCardBody>
                     <MDBCardTitle>{productoItem.name}</MDBCardTitle>
                     <MDBCardText>
                         {productoItem.resumen}
                     </MDBCardText>
+                    <MDBCardText>
+                        ${productoItem.precio}
+                    </MDBCardText>
                 </MDBCardBody>
-                <MDBBtn color='dark'><Link to={"item/" + productoItem.id} > Ver Producto </Link></MDBBtn>
+                <MDBBtn color='dark'><Link to={process.env.PUBLIC_URL + "/item/" + productoItem.id} > Ver Producto </Link></MDBBtn>
             </MDBCard>
         </MDBCol>
 

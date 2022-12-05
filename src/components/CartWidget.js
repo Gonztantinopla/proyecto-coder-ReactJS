@@ -1,9 +1,15 @@
-const Cart = () => {
+import { useCartContext } from '../context/CartContext';
+
+
+const CartWidget = () => {
+    const { totalProductos } = useCartContext();
 
 
     return (
-        <div className=''><img className='d-flex' alt='Carrito' src={require('../assets/img/bag.png')} /></div>
+        <div className='d-flex align-items-center'><span className='contador'>{totalProductos() || ''} </span>
+            <img className='d-flex' alt='Carrito' src={require('../assets/img/bag.png')} />
+        </div>
     )
 }
 
-export default Cart;
+export default CartWidget;

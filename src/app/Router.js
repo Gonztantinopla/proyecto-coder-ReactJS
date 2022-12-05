@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Cart from "../components/Cart";
 import ItemDetailContainer from "../Pages/ItemDetailContainer";
 import ItemListContainer from "../Pages/ItemListContainer";
 import Layout from "./Layout";
+
 
 const Router = () => (
     <BrowserRouter>
@@ -10,6 +12,7 @@ const Router = () => (
                 <Route index element={<ItemListContainer />} />
                 <Route path='category/:id' element={<ItemListContainer />} />
                 <Route path='item/:id' element={<ItemDetailContainer />} />
+                <Route path='cart' element={<Cart />} />
             </Route>
         </Routes>
     </BrowserRouter>

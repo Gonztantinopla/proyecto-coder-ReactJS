@@ -10,7 +10,6 @@ import {
     MDBNavbarNav,
     MDBNavbarItem,
     MDBNavbarLink,
-    MDBBtn,
     MDBDropdown,
     MDBDropdownToggle,
     MDBDropdownMenu,
@@ -24,7 +23,7 @@ export default function App() {
     return (
         <MDBNavbar expand='lg' light bgColor='light'>
             <MDBContainer fluid>
-                <MDBNavbarBrand ><Link to={process.env.PUBLIC_URL + "/"}><img alt='logotipo' src={require('../assets/img/logotipo-s.png')} /><img alt='isotipo' src={require('../assets/img/isotipo-s.png')} /></Link></MDBNavbarBrand>
+                <MDBNavbarBrand ><Link to={"/proyectofinal"}><img alt='logotipo' src={require('../assets/img/logotipo-s.png')} /><img alt='isotipo' src={require('../assets/img/isotipo-s.png')} /></Link></MDBNavbarBrand>
 
                 <MDBNavbarToggler
                     aria-controls='navbarSupportedContent'
@@ -38,7 +37,7 @@ export default function App() {
                 <MDBCollapse navbar show={showBasic}>
                     <MDBNavbarNav className='mr-auto mb-2 mb-lg-0 justify-content-end'>
                         <MDBNavbarItem>
-                            <MDBNavbarLink><Link to={process.env.PUBLIC_URL + "/"}> Inicio </Link></MDBNavbarLink>
+                            <MDBNavbarLink><Link to={"/proyectofinal"}> Inicio </Link></MDBNavbarLink>
                         </MDBNavbarItem>
 
                         <MDBNavbarItem>
@@ -54,7 +53,9 @@ export default function App() {
                             </MDBDropdown>
                         </MDBNavbarItem>
                     </MDBNavbarNav>
-                    <CartWidget />
+                    <Link to={"cart"}>
+                        <CartWidget />
+                    </Link>
                 </MDBCollapse>
             </MDBContainer>
         </MDBNavbar>

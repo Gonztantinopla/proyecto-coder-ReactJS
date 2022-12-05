@@ -10,7 +10,7 @@ export default function App() {
                 <MDBContainer className='text-center text-md-start '>
                     <MDBRow className='mt-3 d-flex justify-content-center align-items-center'>
                         <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-                            <Link to={process.env.PUBLIC_URL + "/"}><img alt='isotipo' src={require('../assets/img/isotipo-s.png')} /></Link>
+                            <Link to={process.env.PUBLIC_URL + "/"}><img alt='isotipo' src={require('../assets/img/logo-e-isologo.png')} /></Link>
                         </MDBCol>
 
                         <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
