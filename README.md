@@ -1,4 +1,4 @@
-# Proyecto final en desarrollo del curso ReactJS en CoderHouse
+# Proyecto final del curso ReactJS en CoderHouse
  - E-comerce de venta de cafe y accesorios de barista
  - Permite simular una compra, agregando articulos al carrito y el proceso de checkout
  - Todos los articulos son cargados desde una database en Firebase
