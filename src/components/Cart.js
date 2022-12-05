@@ -60,7 +60,7 @@ const Cart = () => {
                 cart.map(product => <ItemCart key={product.id} product={product} />)
             }
 
-
+            <h4>Total: $ {totalPrice()}</h4>
             <form className='formulario'>
                 <h4 className='text-center'> Ingrese sus datos para terminar la compra</h4>
                 <MDBRow className='mb-4'>
@@ -80,13 +80,6 @@ const Cart = () => {
                 </MDBBtn>
             </form>
 
-
-
-            <div className='pagar'>
-                <h1>Total: $ {totalPrice()}</h1>
-                <button type='submit' className='pagarOVaciar' onClick={handleClick} >Terminar compra</button>
-                <button className='pagarOVaciar' onClick={() => clearCart()}>vaciar</button>
-            </div>
 
         </div>
     )
